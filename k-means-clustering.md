@@ -32,16 +32,16 @@ K-means clustering is a popular unsupervised machine learning algorithm that par
 - The algorithm assumes that the clusters are roughly spherical in shape. It may not perform well for data with elongated or irregular clusters.
 - K-means does not provide a mechanism to automatically determine the optimal number of clusters (k). You'll need to use domain knowledge or evaluation metrics to guide this decision.
 
-By following these steps and considering the key points, you can effectively apply K-means clustering to uncover hidden patterns and structures within your unlabeled data.
+By following these steps and considering the key points, we can effectively apply K-means clustering to uncover hidden patterns and structures within unlabeled data.
 
 **K-means Clustering Algorithm Implementation**
 
+```python
 import numpy as np
 
 def kmeans(X, k, max_iteration=100):
-    # Initialize the centroids
     centroids = X[np.random.choice(range(len(X)), k, replace=False)]
-    
+   
     for _ in range(max_iteration):
         distances = np.sqrt(((X - centroids[:, np.newaxis])**2).sum(axis=2))
         index = np.argmin(distances, axis=0)

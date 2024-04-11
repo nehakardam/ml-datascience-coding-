@@ -3,10 +3,27 @@
 The elbow method is a visual technique used to estimate the optimal number of clusters (k) for K-means clustering. Below is the step by step guide on  how it works:
 
 **1. Run K-means Clustering for Multiple k Values:**
-- Define a range of possible k values (number of clusters) that you think might be reasonable for your data. Let's call this range {k1, k2, ..., kn}.
+- Define a range of possible k values (number of clusters) that you think might be reasonable for your data. Let's call this range ${k1, k2, ..., kn}$.
 - For each k value in the range:
   - Apply K-means clustering to your data, specifying the current k value.
-  - For each k value, apply K-means clustering and calculate the within-cluster sum of squared errors (WCSS).This measures how much the data points within a cluster deviate from their assigned cluster centroid (center). A lower WCSS indicates tighter clusters.
+  - For each k value, apply K-means clustering and calculate the within-cluster sum of squared errors (WCSS).
+ 
+Here, WCSS (Within-Cluster Sum of Squares) measures how much the data points within a cluster deviate from their assigned cluster centroid (center). A lower WCSS indicates tighter clusters.The formula for WCSS is as follows:
+
+\$[
+\text{WCSS} = \sum_{i=1}^{k} \sum_{x \in C_i} ||x - \mu_i||^2
+\]$
+
+Where:
+- $\(k\)$ is the number of clusters.
+- $\(C_i\)$ represents the \(i\)th cluster.
+- $\(\mu_i\)$ is the centroid of the \(i\)th cluster.
+- $\(x\)$ represents each data point in the \(i\)th cluster.
+
+In words, WCSS is calculated by summing the squared distances between each data point $(\(x\))$ and its corresponding centroid $(\(\mu_i\))$ within each cluster $(\(C_i\))$, and then summing these values across all clusters. 
+
+This measure reflects how tightly grouped the data points are around their respective centroids. A lower WCSS indicates that the data points are closer to their centroids, implying better clustering.
+
   
 **2. Calculate WCSS for Each k:**
 After running K-means for all k values, collect the WCSS values*

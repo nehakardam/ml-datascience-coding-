@@ -61,3 +61,7 @@ plt.title('Elbow Method')
 plt.xlabel('Number of clusters (k)')
 plt.ylabel('WCSS')
 plt.show()
+```
+**Output**
+
+![image](https://github.com/nehakardam/ml-datascience-coding-/assets/70997776/fbc483ce-9e58-41d3-9c49-15ad00aae61d)

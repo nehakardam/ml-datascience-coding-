@@ -1,8 +1,6 @@
 <h1 align="center">K-means Clustering</h1>
 
-
 K-means clustering is a popular unsupervised machine learning algorithm that partitions a set of data points into a specific number (k) of clusters. The goal is to group data points that are similar to each other based on a chosen distance metric (usually Euclidean distance) and minimize the within-cluster variance. Below are the steps involved in the K-means algorithm:
-![image](https://github.com/nehakardam/ml-datascience-coding-/assets/70997776/51207ba6-5909-4425-aad7-c1a3a23f8eb4)
 
 1. **Data Preparation:**
    - Ensure your data is suitable for K-means clustering. It typically works well with numerical data representing different features or characteristics of the data points.
@@ -26,7 +24,7 @@ K-means clustering is a popular unsupervised machine learning algorithm that par
 
 7. **Result:**
    - Once the algorithm converges, each data point will be assigned to a specific cluster, and you will have a set of k clusters that represent groups of similar data points.
-
+![image](https://github.com/nehakardam/ml-datascience-coding-/assets/70997776/51207ba6-5909-4425-aad7-c1a3a23f8eb4)
 **Key Points to Consider:**
 
 - K-means is sensitive to the initial placement of centroids. Different initializations can lead to slightly different clusterings. You can run the algorithm multiple times with different random initializations to check for consistency in the results.

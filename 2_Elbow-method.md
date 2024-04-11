@@ -18,6 +18,10 @@ Create a scatter plot or line plot with k on the x-axis and WCSS on the y-axis.
 - Observe the plotted WCSS values. Ideally, the curve should initially decrease sharply as the number of clusters increases (because more clusters can potentially capture more specific data variations).
 - Look for a bend in the curve where the WCSS starts to decrease at a much slower rate. This bend is often referred to as the "elbow."
 
+![image](https://github.com/nehakardam/ml-datascience-coding-/assets/70997776/12869265-bed4-4f9a-af71-2c951821a00f)
+
+"Elbow method" by Lovepeacejoy404 is licensed under CC BY-SA 4.0.
+
 **5. Interpretation:**
 - Observe the plotted WCSS values. Ideally, the curve should initially decrease sharply as the number of clusters increases (because more clusters can potentially capture more specific data variations).
 - Look for a bend in the curve where the WCSS starts to decrease at a much slower rate. This bend is often referred to as the "elbow."

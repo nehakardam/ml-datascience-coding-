@@ -1,5 +1,4 @@
 <h1 align="center">The Elbow Method</h1>
-****
 
 The elbow method is a visual technique used to estimate the optimal number of clusters (k) for K-means clustering. Below is the step by step guide on  how it works:
 

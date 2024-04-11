@@ -28,7 +28,9 @@ K-means clustering is a popular unsupervised machine learning algorithm that par
 
 7. **Result:**
    - Once the algorithm converges, each data point will be assigned to a specific cluster, and you will have a set of k clusters that represent groups of similar data points.
-![image](https://github.com/nehakardam/ml-datascience-coding-/assets/70997776/51207ba6-5909-4425-aad7-c1a3a23f8eb4)
+<img src="https://github.com/nehakardam/ml-datascience-coding-/assets/70997776/51207ba6-5909-4425-aad7-c1a3a23f8eb4" alt="image" width="400" height="500">
+
+
 **Key Points to Consider:**
 
 - K-means is sensitive to the initial placement of centroids. Different initializations can lead to slightly different clusterings. You can run the algorithm multiple times with different random initializations to check for consistency in the results.

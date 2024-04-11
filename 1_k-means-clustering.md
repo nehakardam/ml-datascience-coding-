@@ -74,3 +74,9 @@ print("Final centroids:")
 print(centroids)
 print("Final cluster assignment:")
 print(labels)
+```
+**Output**
+
+![Screenshot 2024-04-11 at 3 49 51 PM](https://github.com/nehakardam/ml-datascience-coding-/assets/70997776/d861cd5d-be24-432e-a541-d91c077cae14)
+
+
